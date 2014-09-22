@@ -12,6 +12,5 @@
   var tpl = getTemplate('team-tpl');
   $('team').innerHTML = tpl({members: Data.team});
 
-  // console.log(JSON.stringify(Data.team));
 
 }());

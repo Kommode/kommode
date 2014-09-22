@@ -1,12 +1,12 @@
 <section class="slide slide2">
-    <div class="people">
-      <img src="http://placehold.it/300x800&text=Skojarlars!"> 
-      <img src="http://placehold.it/300x800&text=Pantgurra!">
-      <img src="http://placehold.it/300x800&text=Gustaveeeeeen!"> 
-      <img src="http://placehold.it/300x800&text=Pirresnirre!">
-      <img src="http://placehold.it/300x800&text=The Gab!">
-      <img src="http://placehold.it/300x800&text=Mirre!">
-      <img src="http://placehold.it/300x800&text=Eriba!">
-      <img src="http://placehold.it/300x800&text=Ante!"> 
+    <div id="team" class="people"> 
     </div>
 </section>
+
+<script id="team-tpl" type="text/x-handlebars-template">
+  <ul>
+  {{#each members}}
+    <li><img src="http://placehold.it/300x800&text={{name}}"></li>
+  {{/each}}
+  </ul>
+</script>
