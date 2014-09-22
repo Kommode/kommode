@@ -18,8 +18,32 @@ var Data = Data || (function() {
         name: 'Lars-Haakon Simonsen',
         email: 'lh[at]kommode[dot]se',
         img: 'images/lars.jpg'
+      },
+      {
+        name: 'Gustav Wallner',
+        email: 'gustav.wallner[at]kommode[dot]se',
+        img: 'images/gustavw.jpg'
+      },
+      {
+        name: 'Gustav Éen',
+        email: 'gustav.een[at]kommode[dot]se',
+        img: 'images/gustave.jpg'
+      },
+      {
+        name: 'Gabriella Jonsson',
+        email: 'gabriella[at]kommode[dot]se',
+        img: 'images/gabriella.jpg'
+      },
+      {
+        name: 'Martina Milisic',
+        email: 'martina[at]kommode[dot]se',
+        img: 'images/martina.jpg'
+      },
+      {
+        name: 'Andreas Sundström',
+        email: 'andreas[at]kommode[dot]se',
+        img: 'images/andreas.jpg'
       }
     ]
   };
-
 })();

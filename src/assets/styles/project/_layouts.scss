@@ -8,7 +8,13 @@ html, body {
   overflow: hidden;
   &.slide2{
     background-color: #fff;
-    overflow-x: visible;
+    overflow-x: auto;
+    .people{
+      width:3000px;
+    }
+    li {
+      float: left;
+    }
     img {
       display: inline-block;
     }

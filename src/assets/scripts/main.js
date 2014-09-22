@@ -12,5 +12,4 @@
   var tpl = getTemplate('team-tpl');
   $('team').innerHTML = tpl({members: Data.team});
 
-
 }());
