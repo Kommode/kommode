@@ -5,11 +5,27 @@ html, body {
 .slide {
   height: 100%;
   background-color: #eee;
+  overflow: hidden;
+  &.slide2{
+    background-color: #fff;
+  }
   .header {
-     
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    h1{
+      text-align: center
+    }
   }
 }
 
+.slide4 {
+  background-color: #fff;
+  h1 {
+    text-align: center;
+  }
+}
 
 
 .container {
