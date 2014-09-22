@@ -41,12 +41,17 @@ module.exports = function(grunt) {
         files: ['<%= config.src.root %>/**/*.html'],
         tasks: ['copy']
       },
+      markup: {
+        files: ['<%= config.src.root %>/views/{,*/}{,*/}*.html'],
+        tasks: ['includes']
+      },
+
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.src.root %>/{,*/}*.html',
+          '<%= config.tmp.root %>/{,*/}*.html',
           '<%= config.tmp.assets %>/styles/{,*/}*.css',
           '<%= config.src.assets %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -101,6 +106,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     clean: {
       dist: {
         files: [{
@@ -155,6 +161,17 @@ module.exports = function(grunt) {
       },
       dev: {
         src: '<%= config.tmp.assets %>/styles/main.css'
+      }
+    },
+
+    includes: {
+      files: {
+        src: ['<%= config.src.root %>/index.html'],
+        dest: '<%= config.tmp.root %>',
+        flatten: true,
+        options: {
+          silent: true
+        }
       }
     },
 
@@ -256,13 +273,14 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('serve', function (target) {
+  grunt.registerTask('serve', function(target) {
     if (target === 'dist') {
       return grunt.task.run(['dist', 'connect:dist:keepalive']);
     }
 
     grunt.task.run([
       'clean:server',
+      'includes',
       'sass',
       'autoprefixer',
       'connect:livereload',
@@ -275,6 +293,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'test',
     'clean:dist',
+    'includes',
     'useminPrepare',
     'sass',
     'autoprefixer',
