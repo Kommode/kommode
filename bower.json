@@ -4,6 +4,7 @@
   "dependencies": {
     "normalize-scss": "~3.0.1",
     "sass-mediaqueries": "~1.3.0",
-    "susy": "~2.1.3"
+    "susy": "~2.1.3",
+    "handlebars": "~2.0.0"
   }
 }

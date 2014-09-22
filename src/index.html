@@ -16,12 +16,16 @@
   <!-- endbuild -->
 </head>
 <body>
+  include "views/team.html"
+
   include "views/slide1.html"
   include "views/slide2.html"
   include "views/slide3.html"
   include "views/slide4.html"
 
   <!-- build:js({.tmp,src}) assets/scripts/main.min.js -->
+  <script src="assets/bower_components/handlebars/handlebars.js"></script>
+  <script src="assets/scripts/data.js"></script>
   <script src="assets/scripts/main.js"></script>
   <!-- endbuild -->
 
