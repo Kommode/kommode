@@ -28,6 +28,7 @@
 		"console": true,
 		"angular": true,
 		"Handlebars": true,
-		"Data": true
+		"Data": true,
+		"$": true
 	}
 }

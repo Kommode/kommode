@@ -1,24 +1,17 @@
 html, body {
   height: 100%;
 }
+.wrapper {
 
+  height: 100%;
+  position: relative;
+}
 .slide {
+  position:fixed;
+  width:100%;
   height: 100%;
   background-color: #eee;
   overflow: hidden;
-  &.slide2{
-    background-color: #fff;
-    overflow-x: auto;
-    .people{
-      width:3000px;
-    }
-    li {
-      float: left;
-    }
-    img {
-      display: inline-block;
-    }
-  }
   .header {
     margin: 0 auto;
     position: relative;
@@ -32,6 +25,32 @@ html, body {
       transform: translateX(-50%);
     }
   }
+  &.slide1{
+    z-index: 400;
+
+  }
+  &.slide2{
+    background-color: #fff;
+    overflow-x: auto;
+    z-index: 300;
+    .people{
+      width:3000px;
+    }
+    li {
+      float: left;
+    }
+    img {
+      display: inline-block;
+    }
+
+  } 
+  &.slide3 {
+    z-index: 200;
+  }
+  &.slide4 {
+    z-index: 100;
+  }
+  
 }
 
 .slide4 {

@@ -1,15 +1,11 @@
 (function() {
   'use strict';
 
-  function $(id) {
-    return document.getElementById(id);
-  }
-
   function getTemplate(id) {
-    return Handlebars.compile($(id).innerHTML);
+    return Handlebars.compile($('#' + id).html());
   }
 
   var tpl = getTemplate('team-tpl');
-  $('team').innerHTML = tpl({members: Data.team});
+  $('#team').html(tpl({members: Data.team}));
 
 }());
