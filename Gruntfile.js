@@ -52,8 +52,8 @@ module.exports = function(grunt) {
         },
         files: [
           '<%= config.tmp.root %>/{,*/}*.html',
-          '<%= config.tmp.assets %>/styles/{,*/}*.css',
-          '<%= config.src.assets %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= config.tmp.assets %>/styles/**/*.css',
+          '<%= config.src.assets %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
     },
@@ -188,8 +188,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           src: [
-            '<%= config.dist.assets %>/scripts/{,*/}*.js',
-            '<%= config.dist.assets %>/styles/{,*/}*.css'
+            '<%= config.dist.assets %>/scripts/**/*.js',
+            '<%= config.dist.assets %>/styles/**/*.css'
           ]
         }
       }
@@ -216,7 +216,7 @@ module.exports = function(grunt) {
 
     // performs rewrites based on rev and the useminPrepare configuration
     usemin: {
-      html: ['<%= config.dist.root %>/{,*/}{,*/}{,*/}{,*/}*.html'],
+      html: ['<%= config.dist.root %>/**/*.html'],
       css: ['<%= config.dist.assets %>/styles/*.css'],
       options: {
         assetsDirs: ['<%= config.dist.root %>']
@@ -237,8 +237,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: '<%= config.dist.root %>',
           src: [
-            '*.html',
-            'views/{,*/}{,*/}*.html'
+            '*.html'
           ],
           dest: '<%= config.dist.root %>'
         }]
@@ -265,8 +264,8 @@ module.exports = function(grunt) {
           cwd: '<%= config.src.assets %>',
           dest: '<%= config.dist.assets %>',
           src: [
-            'images/{,*/}*',
-            'fonts/{,*/}*'
+            'images/**/*',
+            'fonts/**/*'
           ]
         }]
       },
@@ -274,7 +273,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: '<%= config.src.assets %>/styles',
         dest: '<%= config.tmp.assets %>/styles/',
-        src: '{,*/}*.css'
+        src: '**/*.css'
       }
     }
 
@@ -307,9 +306,9 @@ module.exports = function(grunt) {
     'copy:build',
     'cssmin',
     'uglify',
+    'includes:dist',
     'rev',
     'usemin',
-    'includes:dist',
     'htmlmin'
   ]);
 
