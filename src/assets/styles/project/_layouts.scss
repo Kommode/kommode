@@ -8,14 +8,22 @@ html, body {
   overflow: hidden;
   &.slide2{
     background-color: #fff;
+    overflow-x: visible;
+    img {
+      display: inline-block;
+    }
   }
   .header {
     margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    h1{
-      text-align: center
+    img{
+      height:150px;
+      width:auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
