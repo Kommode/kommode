@@ -1,0 +1,31 @@
+{
+	"node": true,
+	"browser": true,
+	"bitwise": true,
+	"esnext": true,
+	"eqeqeq": true,
+	"bitwise": false,
+	"immed": true,
+	"latedef": true,
+	"camelcase": true,
+	"newcap": true,
+	"regexp": true,
+	"plusplus": false,
+	"noarg": true,
+	"undef": true,
+	"strict": false,
+	"indent": 4,
+	"quotmark": "single",
+	"unused": false,
+	"trailing": true,
+	"smarttabs": true,
+	"globals": {
+		"jquery": true,
+		"module": true,
+		"define": true,
+		"require": true,
+		"alert": true,
+		"console": true,
+		"angular": true
+	}
+}

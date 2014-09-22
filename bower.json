@@ -1,0 +1,9 @@
+{
+  "name": "kommode-web",
+  "private": true,
+  "dependencies": {
+    "normalize-scss": "~3.0.1",
+    "sass-mediaqueries": "~1.3.0",
+    "susy": "~2.1.3"
+  }
+}
