@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       markup: {
         files: ['<%= config.src.root %>/views/**/*.html', '<%= config.src.root %>/**/*.html'],
-        tasks: ['includes']
+        tasks: ['includes:dev']
       },
 
       livereload: {
@@ -165,9 +165,17 @@ module.exports = function(grunt) {
     },
 
     includes: {
-      files: {
+      dev: {
         src: ['<%= config.src.root %>/index.html'],
         dest: '<%= config.tmp.root %>',
+        flatten: true,
+        options: {
+          silent: true
+        }
+      },
+      dist: {
+        src: ['<%= config.src.root %>/index.html'],
+        dest: '<%= config.dist.root %>',
         flatten: true,
         options: {
           silent: true
@@ -248,7 +256,6 @@ module.exports = function(grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'views/{,*/}{,*/}{,*/}{,*/}*.html',
             'api/*'
           ]
         },
@@ -280,7 +287,7 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'clean:server',
-      'includes',
+      'includes:dev',
       'sass',
       'autoprefixer',
       'connect:livereload',
@@ -293,7 +300,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'test',
     'clean:dist',
-    'includes',
     'useminPrepare',
     'sass',
     'autoprefixer',
@@ -303,6 +309,7 @@ module.exports = function(grunt) {
     'uglify',
     'rev',
     'usemin',
+    'includes:dist',
     'htmlmin'
   ]);
 
