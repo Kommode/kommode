@@ -1,9 +1,17 @@
 (function() {
   'use strict';
 
-  // var document = window.document;
-  // var heading = document.createElement('h1');
+  function $(id) {
+    return document.getElementById(id);
+  }
 
-  // heading.innerHTML = 'Hello World';
-  // document.body.appendChild(heading);
+  function getTemplate(id) {
+    return Handlebars.compile($(id).innerHTML);
+  }
+
+  var tpl = getTemplate('team-tpl');
+  $('team').innerHTML = tpl({members: Data.team});
+
+  // console.log(JSON.stringify(Data.team));
+
 }());

@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         tasks: ['copy']
       },
       markup: {
-        files: ['<%= config.src.root %>/views/{,*/}{,*/}*.html'],
+        files: ['<%= config.src.root %>/views/**/*.html', '<%= config.src.root %>/**/*.html'],
         tasks: ['includes']
       },
 

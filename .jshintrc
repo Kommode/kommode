@@ -26,6 +26,8 @@
 		"require": true,
 		"alert": true,
 		"console": true,
-		"angular": true
+		"angular": true,
+		"Handlebars": true,
+		"Data": true
 	}
 }
