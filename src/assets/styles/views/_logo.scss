@@ -1,0 +1,28 @@
+.logo {
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+
+  fill: limegreen;
+}
+
+.logo-icon {
+  transform-origin: 50% 100% 0;
+  animation: drawer 200ms linear infinite;
+}
+
+@keyframes drawer {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg); 
+  }
+  100% {
+    transform: rotate(0); 
+  }
+}
+
+.logo-text {
+
+}
