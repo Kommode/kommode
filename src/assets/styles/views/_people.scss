@@ -1,5 +1,16 @@
 .people {
-
+  background-color: #fff;
+  overflow-x: auto;
+  z-index: 300;
+  .people{
+    width:3000px;
+  }
+  li {
+    float: left;
+  }
+  img {
+    display: inline-block;
+  }
 }
 
 .people-slider {
