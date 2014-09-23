@@ -3,7 +3,7 @@ html, body {
 }
 
 header {
- position: fixed;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #eee;
@@ -55,7 +55,6 @@ header {
     img {
       display: inline-block;
     }
-
   } 
   &.slide3 {
     z-index: 200;
