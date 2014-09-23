@@ -5,8 +5,8 @@
     return Handlebars.compile($('#' + id).html());
   }
 
-  var tpl = getTemplate('people-tpl');
-  $('.people-slider').html(tpl({person: Data.team}));
+  var tpl = getTemplate('person-tpl');
+  $('.people-slider').html(tpl({person: Data.people}));
 
   // var $elements = $('ul.team').children();
 
