@@ -3,26 +3,27 @@
   max-width: 500px;
   margin: auto;
 
-  fill: limegreen;
+  fill: #333;
 }
 
 .logo-icon {
   transform-origin: 50% 100% 0;
-  animation: drawer 200ms linear infinite;
+  animation: weighing 2s cubic-bezier(.3, .885, .320, 2) infinite alternate;
 }
 
-@keyframes drawer {
+@keyframes weighing {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(2deg); 
-  }
   100% {
-    transform: rotate(0); 
+    transform: rotate(5deg); 
   }
 }
 
 .logo-text {
+  
+}
 
+.logo-text-hidden {
+  @extend %visually-hidden;
 }
