@@ -2,17 +2,9 @@ html, body {
   height: 100%;
 }
 
-<<<<<<< HEAD
 header {
- position:fixed;
-=======
-  height: 100%;
-  position: relative;
-}
-.slide {
-  // position:fixed;
->>>>>>> 78061e74b171227facf4c332991a881a8bc294ec
-  width:100%;
+ position: fixed;
+  width: 100%;
   height: 100%;
   background-color: #eee;
   overflow: hidden; 
@@ -26,7 +18,7 @@ header {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    img{
+    svg {
       height:150px;
       width:auto;
       position: relative;
@@ -38,11 +30,7 @@ header {
 
 .wrapper {
   height: 100%;
-  transform: translate3d(0px,0,0px);
   position: relative;
-  &.active {
-    position: relative;
-  }
 }
 .slide {
   width:100%;
@@ -55,44 +43,19 @@ header {
 
   }
   &.slide2{
-    background-color: #fafafa;
+    background-color: #fff;
     overflow-x: auto;
     z-index: 300;
-    #team-slider{
-      width:2400px;
-      height: 100%;
-      ul.team {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        li.people {
-          display: block;
-          height: 100%;
-          overflow: hidden;
-          width: 20%;
-          float: left;
-          box-sizing: border-box;
-          .image {
-            //remove when we have pics
-            height: 80%;
-          }
-
-          .about {
-            height: 20%;
-            text-align: center;
-            background-color: #343434;
-            h3 {
-              color: #fafafa;
-              margin: 0;
-            }
-          }
-        }
-      }
-      img {
-        display: inline-block;
-      }
+    .people{
+      width:3000px;
     }
+    li {
+      float: left;
+    }
+    img {
+      display: inline-block;
+    }
+
   } 
   &.slide3 {
     z-index: 200;
@@ -115,5 +78,6 @@ header {
     width: $width-lg-screen;
     margin: 0 auto;
 }
+
 
 
