@@ -8,18 +8,15 @@
 
 .logo-icon {
   transform-origin: 50% 100% 0;
-  animation: drawer 2s cubic-bezier(.175, .885, .320, 1.275) infinite;
+  animation: weighing 2s cubic-bezier(.3, .885, .320, 2) infinite alternate;
 }
 
-@keyframes drawer {
+@keyframes weighing {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(5deg); 
-  }
   100% {
-    transform: rotate(0); 
+    transform: rotate(5deg); 
   }
 }
 
