@@ -6,6 +6,6 @@
   }
 
   var tpl = getTemplate('team-tpl');
-  $('#team').html(tpl({members: Data.team}));
+  $('.team').html(tpl({person: Data.team}));
 
 }());

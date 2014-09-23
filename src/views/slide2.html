@@ -1,12 +1,16 @@
 <section class="slide slide2">
-    <div id="team" class="people"> 
-    </div>
+  <div id="team-slider">
+    <ul class="team"></ul>
+  </div>
 </section>
 
 <script id="team-tpl" type="text/x-handlebars-template">
-  <ul>
-  {{#each members}}
-    <li><img src="http://placehold.it/300x800/e8117f/ffffff&text={{name}}"></li>
+  {{#each person}}
+  <li class="people">
+  	<div class="image"></div>
+  	<div class="about">
+  		<h3>{{name}}</h3>
+  	</div>
+  </li>
   {{/each}}
-  </ul>
-</script>
+</script>	
