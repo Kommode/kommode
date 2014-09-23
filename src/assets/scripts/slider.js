@@ -1,12 +1,10 @@
 (function() {
   'use strict';
 
-  function getTemplate(id) {
-    return Handlebars.compile($('#' + id).html());
-  }
+  function getTemplate(id) {return Handlebars.compile(document.getElementById(id).innerHTML);}
 
-  var tpl = getTemplate('person-tpl');
-  $('.people-slider').html(tpl({person: Data.people}));
+  var peopleSlider = document.getElementById('people-slider');
+  peopleSlider.innerHTML = getTemplate('person-tpl')({person: Data.people});
 
   // var $elements = $('ul.team').children();
 

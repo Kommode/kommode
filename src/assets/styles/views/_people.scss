@@ -1,16 +1,5 @@
 .people {
-  background-color: #fff;
-  overflow-x: auto;
-  z-index: 300;
-  .people{
-    width:3000px;
-  }
-  li {
-    float: left;
-  }
-  img {
-    display: inline-block;
-  }
+  
 }
 
 .people-slider {
@@ -24,6 +13,14 @@
    width: 20%;
 
    text-align: center;
+
+   .image {
+    height: 80%;
+   }
+
+   .about {
+    height: 20%;
+   }
 }
 
 // #team-slider {
