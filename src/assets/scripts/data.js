@@ -3,7 +3,7 @@ var Data = Data || (function() {
 
   return {
     pitch: 'blablablablabla',
-    team: [
+    people: [
       {
         name: 'Erica Liljeblad',
         email: 'erica[at]kommode[dot]se',
