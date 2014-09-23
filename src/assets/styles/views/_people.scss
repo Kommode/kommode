@@ -1,9 +1,18 @@
-.people-slider {
+.people {
 
 }
 
+.people-slider {
+  height: 100%;
+}
+
 .person {
-    
+   display: block;
+   float: left;
+   height: 100%;
+   width: 20%;
+
+   text-align: center;
 }
 
 // #team-slider {
