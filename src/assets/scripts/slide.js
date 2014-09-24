@@ -1,11 +1,12 @@
 var height = $(window).height();
 var width = $(window).width();
 var $header = $('.header');
+var $fullscreen = $('.fullscreen');
 
 (function() {
   $(window).resize(function() {
-    $header.height(height);
-    $header.width(width);
+    $fullscreen.height(height);
+    $fullscreen.width(width);
     height = $(window).height();
     width = $(window).width();
   });

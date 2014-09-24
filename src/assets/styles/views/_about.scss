@@ -1,0 +1,33 @@
+.about {
+	.content-left {
+		background-color: #F6F2EC;
+		width: 50%;
+		height: 100%;
+		text-align: right;
+		float: left;
+		h2 {
+			position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+			color: #010101;
+			margin-right: 10px;
+			padding: 5px 0;
+			.phonetic {
+				font-size: 20px;
+			}
+		}
+	}
+	.content-right {
+		width: 50%;
+		height: 100%;
+		background-color: #F6F2EC;
+		float: left;
+		.text {
+			position: relative;
+			top: 60%;
+			transform: translateY(-60%);
+			width: 90%;
+			margin: 10px 0 10px 10px;
+		}
+	}
+}
