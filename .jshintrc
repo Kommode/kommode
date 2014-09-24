@@ -20,7 +20,7 @@
 	"trailing": true,
 	"smarttabs": true,
 	"globals": {
-		"jquery": true,
+		"jQuery": true,
 		"module": true,
 		"define": true,
 		"require": true,
@@ -29,6 +29,7 @@
 		"angular": true,
 		"Handlebars": true,
 		"Data": true,
+		"Utils": true,
 		"$": true
 	}
 }
