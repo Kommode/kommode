@@ -41,7 +41,7 @@ var $fullscreen = $('.fullscreen');
     $header.bind('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
       enableScroll();
     });
-    if ($(window).scrollTop() >= 5 && $header.hasClass('visible')) {
+    if ($(window).scrollTop() >= 0 && $header.hasClass('visible')) {
       $header.addClass('active').removeClass('visible');
       disableScroll();
     }
