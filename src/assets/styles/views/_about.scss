@@ -1,24 +1,28 @@
 .about {
-	background-color: #D9DFD3;
-	padding: 20px;
+	background-color: #E1940A;
+	border: 20px solid #fff;
+	// padding: 20px;
 	.content {
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
 		h2 {
-			display: inline-block;
-			border-top: 2px solid #0082BD;
-			border-bottom: 2px solid #0082BD;
-			color: #0082BD;
+			font-size: 40px;
+			color: #FECD00;
 			line-height: 40px;
 			.phonetic {
-				font-size: 20px;
+				font-size: 35px;
+				line-height: 21px;
 			}
 		}
-		h3 {
-			color: #312662;
+		p {
+			color: #f1f1f1;
+			font-size: 20px;
 		}
+		// h3 {
+		// 	color: #312662;
+		// }
 	}
 }
 
