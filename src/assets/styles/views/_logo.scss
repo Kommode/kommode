@@ -5,12 +5,13 @@
   width: 50%;
   max-width: 500px;
   margin: auto;
-  fill: #333;
+  fill: #fff;
 }
 
 .logo-icon {
-  transform-origin: 50% 100% 0;
+  transform-origin: 35% 100% 0;
   animation: weighing 2s cubic-bezier(.3, .885, .320, 2) infinite alternate;
+  o-animation: none;
 }
 
 @keyframes weighing {
@@ -28,4 +29,10 @@
 
 .logo-text-hidden {
   @extend %visually-hidden;
+}
+
+@-moz-document url-prefix() {
+  .logo-icon {
+    animation: none;
+  }
 }

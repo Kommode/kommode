@@ -6,7 +6,7 @@ header {
   overflow: hidden; 
   z-index: 9999;
   transition: all ease 1s;
-  background: url('../images/bg_city.jpg') no-repeat center;
+  background: #eee url('../images/bg_city.jpg') no-repeat center;
   background-size: cover;
   &.active {
     transform: translate3d(0,-110%,0px);

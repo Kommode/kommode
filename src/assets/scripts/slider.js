@@ -16,11 +16,11 @@
     this.timer = 180;
     this.count = 0;
 
-    // var self = this;
-    // (function loop() {
-    //   requestAnimationFrame(loop);
-    //   self.play();
-    // }());
+    var self = this;
+    (function loop() {
+      requestAnimationFrame(loop);
+      self.play();
+    }());
   };
 
   Slider.prototype.play = function() {

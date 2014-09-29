@@ -37,10 +37,13 @@
     background-color: #202020;
     color: #f0f0f0;
     
-    h3 {
+    .text {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      p {
+        line-height: 10px;
+      }
     }
   }
 }
