@@ -16,11 +16,11 @@
     this.timer = 180;
     this.count = 0;
 
-    var self = this;
-    (function loop() {
-      requestAnimationFrame(loop);
-      self.play();
-    }());
+    // var self = this;
+    // (function loop() {
+    //   requestAnimationFrame(loop);
+    //   self.play();
+    // }());
   };
 
   Slider.prototype.play = function() {
@@ -33,7 +33,7 @@
   Slider.prototype.step = function() {
     var stepSize = '-' + this.itemWidth;
     this.$el.css({
-      transition: 'all 500ms ease',
+      transition: '-webkit-transform 500ms ease',
       transform: 'translateX(' + stepSize + 'px)'
     });
   };
@@ -69,7 +69,7 @@
 
   Slider.prototype.setWidths = function() {
     this.itemsOnScreen = this.getNumItemsOnScreen($(window).width());
-    this.itemWidth = $(window).width() / this.itemsOnScreen;
+    this.itemWidth = ($(window).width() - 40) / this.itemsOnScreen;
     this.elWidth = this.itemWidth * (this.itemsOnScreen + 2);
 
     this.$items.width(this.itemWidth);
