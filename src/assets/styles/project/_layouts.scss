@@ -11,6 +11,13 @@ header {
   }
 }
 
+.frame {
+  height: 100%;
+  width: 100%;
+  border: 8px solid #fff;
+  mix-blend-mode: difference;
+}
+
 .wrapper {
   height: 100%;
   position: relative;

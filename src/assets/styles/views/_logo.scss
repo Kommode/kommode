@@ -1,11 +1,17 @@
+header {
+  background: url(../images/marble_blue_dark.jpg);
+  background-size: cover;
+  padding: 2em;
+}
+
 .logo {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 50%;
-  max-width: 500px;
+  width: 40%;
+  max-width: 400px;
   margin: auto;
-  fill: #333;
+  fill: #fff;
 }
 
 .logo-icon {
