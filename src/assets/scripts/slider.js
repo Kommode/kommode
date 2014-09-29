@@ -7,6 +7,7 @@
 
   Slider.prototype.init = function() {
     this.$el.html(u.getTemplate('person-tpl')({person: Data.people}));
+
     this.$items = this.$el.find('li');
 
     this.setWidths();
