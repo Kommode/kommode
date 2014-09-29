@@ -7,42 +7,42 @@ var Data = Data || (function() {
       {
         name: 'Erica Liljeblad',
         email: 'erica[at]kommode[dot]se',
-        img: 'images/erica.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Pierre Sköldborg',
         email: 'pierre[at]kommode[dot]se',
-        img: 'images/pierre.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Lars-Haakon Simonsen',
         email: 'lh[at]kommode[dot]se',
-        img: 'images/lars.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Gustav Wallner',
         email: 'gustav.wallner[at]kommode[dot]se',
-        img: 'images/gustavw.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Gustav Éen',
         email: 'gustav.een[at]kommode[dot]se',
-        img: 'images/gustave.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Gabriella Jonsson',
         email: 'gabriella[at]kommode[dot]se',
-        img: 'images/gabriella.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Martina Milisic',
         email: 'martina[at]kommode[dot]se',
-        img: 'images/martina.jpg'
+        img: 'assets/images/mongo.png'
       },
       {
         name: 'Andreas Sundström',
         email: 'andreas[at]kommode[dot]se',
-        img: 'images/andreas.jpg'
+        img: 'assets/images/silouette.jpg'
       }
     ]
   };

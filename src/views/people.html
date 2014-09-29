@@ -5,8 +5,10 @@
 <script id="person-tpl" type="text/x-handlebars-template">
   {{#each person}}
   <li>
-  	<div class="image"></div>
-  	<div class="about">
+  	<div class="image">
+  		<img src="{{img}}">
+  	</div>
+  	<div class="info">
   		<h3>{{name}}</h3>
   	</div>
   </li>

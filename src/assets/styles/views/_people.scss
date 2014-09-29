@@ -1,5 +1,5 @@
 .people {
-  background-color: #E8550C;
+  background-color: #E7E5E6;
   border: 20px solid #fff;
   border-top: 0;
 }
@@ -13,7 +13,7 @@
   }
 
   li {
-    display: block;
+    display: inline-block;
     float: left;
     height: 100%;
     overflow: hidden;
@@ -22,8 +22,26 @@
   
   .image { 
     height: 80%;
+    width: auto;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
+    }
   }
-  .about {
+  .info {
     height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #202020;
+    color: #f0f0f0;
+    
+    h3 {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
