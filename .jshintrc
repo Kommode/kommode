@@ -30,6 +30,7 @@
 		"Handlebars": true,
 		"Data": true,
 		"Utils": true,
-		"$": true
+		"$": true,
+		"fadeContent" : true
 	}
 }
