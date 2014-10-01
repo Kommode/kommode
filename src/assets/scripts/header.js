@@ -34,6 +34,7 @@ var $header = $('.header');
     if ($(window).scrollTop() >= 0 && $header.hasClass('visible')) {
       $header.addClass('active').removeClass('visible');
       disableScroll();
+      fadeContent();
     }
     if ($header.hasClass('active') && $(window).scrollTop() === 0) {
       $header.removeClass('active').addClass('visible');
