@@ -8,6 +8,7 @@
   fill: #fff;
 }
 
+<<<<<<< HEAD
 .logo-icon {
   transform-origin: 35% 100% 0;
   animation: weighing 2s cubic-bezier(.3, .885, .320, 2) infinite alternate;
@@ -23,12 +24,8 @@
   }
 }
 
+=======
+>>>>>>> aa739866d68973a787f57466fe631345042259e4
 .logo-text-hidden {
   @extend %visually-hidden;
-}
-
-@-moz-document url-prefix() {
-  .logo-icon {
-    animation: none;
-  }
 }
