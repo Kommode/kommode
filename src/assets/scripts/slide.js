@@ -1,6 +1,7 @@
 var height = $(window).height();
 var width = $(window).width();
 var $header = $('.header');
+var $wrapper = $('.wrapper');
 var $fullscreen = $('.fullscreen');
 
 (function() {
@@ -40,6 +41,7 @@ var $fullscreen = $('.fullscreen');
     //console.log($(window).scrollTop());
     $header.bind('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
       enableScroll();
+      console.log('wakka');
     });
     if ($(window).scrollTop() >= 0 && $header.hasClass('visible')) {
       $header.addClass('active').removeClass('visible');
@@ -47,7 +49,6 @@ var $fullscreen = $('.fullscreen');
     }
     if ($header.hasClass('active') && $(window).scrollTop() === 0) {
       $header.removeClass('active').addClass('visible');
-      $('.wrapper').removeClass('active');
     }
   });
 }());

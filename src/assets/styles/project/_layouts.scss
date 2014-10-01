@@ -8,6 +8,7 @@ header {
   transition: all ease 1s;
   background: #eee url('../images/bg_city.jpg') no-repeat center;
   background-size: cover;
+  border: 15px solid #fff;
   &.active {
     transform: translate3d(0,-110%,0px);
   }

@@ -11,9 +11,3 @@
 .logo-text-hidden {
   @extend %visually-hidden;
 }
-
-@-moz-document url-prefix() {
-  .logo-icon {
-    animation: none;
-  }
-}
