@@ -45,6 +45,7 @@ var Data = Data || (function() {
         email: 'andreas[at]kommode[dot]se',
         img: 'assets/images/andreas.jpg',
         slogan: 'Helstressad'
+      },
       {
         name: 'Lars-Haakon Simonsen',
         email: 'lh[at]kommode[dot]se',
