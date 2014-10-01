@@ -1,7 +1,7 @@
 .wrapper
 
 .about {
-	background-color: #E1940A;
+	background-color: $color-brand;
 	border: 15px solid #fff;
 	.content {
 		position: relative;
@@ -12,14 +12,18 @@
 		margin: 0 auto;
 		h2 {
 			font-size: 2.3em;
-			color: #FECD00;
+			color: #334040;
 			.phonetic {
 				font-size: 35px;
 			}
 		}
 		p {
-			color: #f1f1f1;
+			color: #343434;
 			font-size: 1.2em;
+		}
+
+		a {
+			text-decoration: underline;
 		}
 	}
 }
