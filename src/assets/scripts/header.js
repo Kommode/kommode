@@ -1,6 +1,6 @@
 var $header = $('.header');
 
-(function() {
+function headerSlide() {
 
   function preventDefault(e) {
     e = e || window.event;
@@ -40,4 +40,8 @@ var $header = $('.header');
       $header.removeClass('active').addClass('visible');
     }
   });
-}());
+}
+
+if (screen.width > 600) {
+  headerSlide();
+}

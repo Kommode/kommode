@@ -13,3 +13,9 @@ header {
     transform: translate3d(0,-110%,0px);
   }
 }
+
+@include max-screen(600px)  { 
+  header {
+    position: relative;
+  }
+}

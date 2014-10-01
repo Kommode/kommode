@@ -4,7 +4,7 @@
 	border: 15px solid #fff;
 	
 	.content {
-		opacity: 0;
+		opacity: 1;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
@@ -37,7 +37,7 @@
 @include min-screen(600px)  { 
 	.about{
 		.content{
-
+			opacity: 0;
 			h2{
 				font-size: 2.57em !important;
 				text-align: center;
@@ -54,7 +54,6 @@
 	.about{
 		.content{
 			width: 85% !important;
-
 		}
 	}
 } 

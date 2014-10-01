@@ -59,3 +59,25 @@
     transition: all 100ms ease-in-out;
   }
 }
+
+@include max-screen(768px)  {
+  .people-slider {
+    li {
+      margin-bottom: 5px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        bottom: 0;
+        opacity: 0.9;
+        height: 25%;
+      }
+      .text { 
+        opacity: 1;
+        top: 87%;
+      }
+    }
+  }
+}
