@@ -42,6 +42,12 @@ function headerSlide() {
   });
 }
 
-if (screen.width > 600) {
+if (! navigator.userAgent.match(/Android/i) &&
+  ! navigator.userAgent.match(/webOS/i) &&
+  ! navigator.userAgent.match(/iPhone/i) &&
+  ! navigator.userAgent.match(/iPad/i)) {
+
   headerSlide();
+} else {
+  $('.about > .content').css({opacity: 1});
 }
