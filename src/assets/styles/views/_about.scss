@@ -9,10 +9,12 @@
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
-		width: 50%;
+		width: 100%;
 		margin: 0 auto;
+		padding: 0 20px;
+		text-align: left;
 		h2 {
-			font-size: 2.87em;
+			font-size: 2em;
 			color: #334040;
 			margin-bottom: 0.6em;
 			.phonetic {
@@ -21,8 +23,9 @@
 		}
 		p {
 			color: #343434;
-			font-size: 1.45em;
+			font-size: 1em;
 			line-height: 1.4;
+			//margin: 10px;
 		}
 
 		a {
@@ -30,3 +33,43 @@
 		}
 	}
 }
+
+@include min-screen(600px)  { 
+	.about{
+		.content{
+
+			h2{
+				font-size: 2.57em !important;
+				text-align: center;
+			}
+			p{
+				font-size: 1.2em !important;
+				text-align: center;
+			}
+		}
+	}
+ }
+
+@include min-screen(768px)  { 
+	.about{
+		.content{
+			width: 85% !important;
+
+		}
+	}
+} 
+
+@include min-screen(1000px)  { 
+	.about{
+		.content{
+			width: 65% !important;
+						h2{
+				font-size: 2.87em !important;
+			}
+			p{
+				font-size: 1.45em !important;
+			}
+		}
+	}
+ }
+
