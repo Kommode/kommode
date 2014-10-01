@@ -1,5 +1,6 @@
 // Generic ---------------------------------------------------------------------
-$width-lg-screen: 75em;
+$width-lg-screen: 65em;
+$width-md-screen: 40em;
 $width-sm-screen: 30em;
 
 // Colors ----------------------------------------------------------------------
@@ -19,5 +20,5 @@ $heading-font-family: 'Lato', sans-serif;
 // Susy -----------------------------------------------------------------------
 $susy: (
   columns: 12,  // The number of columns in your grid
-  gutters: 1/4, // The size of a gutter in relation to a single column
+  gutters: 0, // The size of a gutter in relation to a single column
 );

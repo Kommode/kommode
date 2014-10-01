@@ -1,49 +1,60 @@
 .people {
-  background-color: #E7E5E6;
   border: 15px solid #fff;
   border-top: 0;
 }
 
 .people-slider {
-  height: 100%;
-
-  ul {
-    position: relative;
-    height: 100%;
-  }
+  @include container;
+  color: #fff;
 
   li {
-    display: inline-block;
-    float: left;
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .image { 
-    height: 80%;
-    width: auto;
-    margin: 0 auto;
-
-    img {
-      height: 100%;
-      width: auto;
-      margin: 0 auto;
-    }
-  }
-  .info {
-    height: 20%;
-    margin: 0 auto;
-    background-color: #202020;
-    color: #f0f0f0;
+    @include min-screen(600px) { @include span(12); }
+    @include min-screen($width-sm-screen) { @include span(6); }
+    @include min-screen($width-md-screen) { @include span(4); }
+    @include min-screen($width-lg-screen) { @include span(3); }
     
-    .text {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      p {
-        line-height: 10px;
-      }
+    position: relative;
+    text-align: center;
+    margin-bottom: -.2em;
+    padding: 0; 
+
+    &:before {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      content: '';
+      display: block;
+      background: $color-brand;
+      z-index: 1;
+      opacity: 0;
+      transition-delay: 100ms;
+      transition: opacity 200ms linear;
     }
+  }
+
+  li:hover {
+    &:before {
+      opacity: 0.9;
+    }
+    .text {
+      opacity: 1;
+      transform: translateY(-2em);
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 0;
+    filter: grayscale(100%);
+    max-width: 100%;
+  }
+
+  .text {
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    transition: all 100ms ease-in-out;
   }
 }

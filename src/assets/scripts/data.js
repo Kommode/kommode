@@ -49,7 +49,7 @@ var Data = Data || (function() {
       {
         name: 'Andreas Sundström',
         email: 'andreas[at]kommode[dot]se',
-        img: 'assets/images/silouette.jpg',
+        img: 'assets/images/erica.jpg',
         slogan: 'Helstressad'
       }
     ]
