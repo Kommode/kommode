@@ -11,12 +11,12 @@
       display: inline-block;
       margin: 0 auto;
       font-size: 4vw;
-      color: $color-link;
+      color: $color-brand;
       text-decoration: none;
       border-bottom: 8px solid transparent;
       transition: all 0.2s;
       &:hover {
-        border-bottom: 8px solid $color-link;
+        border-bottom: 8px solid $color-brand;
         transition: all 0.2s;
       }
     }

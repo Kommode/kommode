@@ -8,6 +8,21 @@
   fill: #fff;
 }
 
+.logo-icon {
+  transform-origin: 35% 100% 0;
+  animation: weighing 2s cubic-bezier(.3, .885, .320, 2) infinite alternate;
+  o-animation: none;
+}
+
+@keyframes weighing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg); 
+  }
+}
+
 .logo-text-hidden {
   @extend %visually-hidden;
 }
