@@ -5,8 +5,7 @@
   width: 50%;
   max-width: 500px;
   margin: auto;
-  fill: desaturate(darken($color-brand, 20%), 20%);
-  mix-blend-mode: multiply;
+  fill: $color-default-light;
 }
 
 .logo-text-hidden {
